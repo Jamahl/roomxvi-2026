@@ -18,7 +18,15 @@ const Home = () => {
                 </defs>
             </svg>
 
-            <header className="mb-16">
+            {/* Minimal Content Navigation */}
+            <nav className="hidden xl:block fixed left-12 top-1/2 -translate-y-1/2 space-y-6">
+                <div className="flex flex-col gap-4 border-l border-gray-800 py-2 pl-4">
+                    <a href="#intro" className="text-xs font-medium text-gray-500 hover:text-white transition-colors uppercase tracking-wider">Intro</a>
+                    <a href="#blog" className="text-xs font-medium text-gray-500 hover:text-white transition-colors uppercase tracking-wider">Blog</a>
+                </div>
+            </nav>
+
+            <header id="intro" className="mb-16">
                 <h1 className="text-4xl font-medium text-white mb-8">
                     <span className="realistic-marker-highlight">Hey, I'm Jamahl</span>
                 </h1>
@@ -44,7 +52,7 @@ const Home = () => {
                 </div>
             </header>
 
-            <section className="mb-16">
+            <section id="blog" className="mb-16">
                 <div className="flex items-baseline justify-between mb-6">
                     <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wider">Writing</h2>
                 </div>
