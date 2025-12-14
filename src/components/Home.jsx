@@ -22,7 +22,7 @@ const Home = () => {
             <nav className="hidden xl:block fixed left-12 top-1/2 -translate-y-1/2 space-y-6">
                 <div className="flex flex-col gap-4 border-l border-gray-800 py-2 pl-4">
                     <a href="#intro" className="text-xs font-medium text-gray-500 hover:text-white transition-colors uppercase tracking-wider">Intro</a>
-                    <a href="#blog" className="text-xs font-medium text-gray-500 hover:text-white transition-colors uppercase tracking-wider">Blog</a>
+                    <a href="#blog" className="text-xs font-medium text-gray-500 hover:text-white transition-colors uppercase tracking-wider">Writing</a>
                 </div>
             </nav>
 
