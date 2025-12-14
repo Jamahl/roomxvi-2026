@@ -15,15 +15,15 @@ I built a simple SaaS app using AI. The term nowadays is Vibe Coding and while I
 
 <img src="/images/img-1.png" alt="Vibe Coding Process" style="width: 50%; display: block; margin: 50px auto;" class="rounded-xl shadow-lg border border-gray-800" />
 
-AI-assisted software development is just getting wild. Lovable, Cursor et al are growing like crazy. I like Lovable, but it’s not what I wanted to use. I wanted more learning, to be closer to the code, and more friction. To this end, I’ve been using Windsurf for the past 8 or 9 months for random projects. I’ve tried a lot of the latest tools and settled on a stack that I’ve been really enjoying to use. This article goes through the process of how I built and deployed a fully functioning web application ([vidviso.com](http://vidviso.com)) using the latest AI tools.
+AI-assisted software development is just getting wild. Lovable, Cursor et al are growing like crazy. I like Lovable, but it’s not what I wanted to use. I wanted to be closer to the code which allowed me to learn more, and added friction which made it more enjoyable. To this end, I’ve been using Windsurf for the past 8 or 9 months for random projects (see [github](https://github.com/jamahl)). I’ve tried a lot of the latest tools and settled on a stack that I’ve been really enjoying to use. This article goes through the process of how I built and deployed a fully functioning web application ([vidviso.com](http://vidviso.com)) using the latest AI tools and a mini guide if you're interested in doing something similar.
 > Note: the goal was learning and having fun, not to attain perfection or become an engineer.
 
-I’ve been playing around with code for ~10 years but I’m not an engineer. I used to edit free bootstrap templates I downloaded online to learn how websites were put together. But I could never sit down and learn python or javascript for more than an hour, so I became comfortable with nocode tools and kept playing around. When ChatGPT first came out, I was using it to help me build TwiML scripts for building a Twilio app. RAG wasn’t a thing, context windows were tiny, hallucinations frequent and prompt engineering was in it’s infancy. But it worked and it was exciting, allowing me to create things I’ve never been able to before. And in the past couple of years as tooling as got better, my ability to make ideas of mine a reality became easier and easier. Now we have models and IDEs that can zero-shot complex logic with backend, frontend, design, database, APIs, and deployment covered. The world is wild, and it’s only getting wilder.
+I’ve been playing around with code for ~10 years but I’m not an engineer. I used to edit free bootstrap templates I downloaded online to learn how websites were put together. But I could never sit down and learn python or javascript for more than an hour, so I became comfortable with nocode tools and kept playing around. When ChatGPT first came out, I was using it to help me build TwiML scripts for building a Twilio app and learn how to set up scripts to automate daily tasks. RAG wasn’t a thing, context windows were tiny, hallucinations frequent and prompt engineering was in it’s infancy. But it worked and it was exciting, allowing me to create things I’ve never been able to before. And in the past couple of years as tooling as got better, my ability to make ideas of mine a reality became easier and easier. Now we have models and IDEs that can zero-shot complex logic with backend, frontend, design, database, APIs, and deployment covered. The world is wild, and it’s only getting wilder.
 
 Starting with an idea
 ---------------------
 
-I came across a company called TwelveLabs, an API-first product that understands video and have a suite of endpoints that can do cool things. I jumped into their open playground and thought it was quite magical, allowing you to search through video using natural language for moments ie if you upload a football match, you can search for moments such as "*all headed shots on goal*", "*find me all the big tackles*" or "*generate me a 30 second clip of players arguing with the referee*". My mind started firing. I wanted to see how quickly I could build something. I thought sports was a good place to start, to I set out to build a simple MVP where you can:
+I came across a company called [TwelveLabs](https://www.twelvelabs.io/), an API-first product that understands video content incredibly well and have a suite of endpoints that can do cool things. I jumped into their open playground and new I was playing with some special sauce. It allows you to search through video using natural language for moments ie if you upload a football match, you can search for moments such as "*all headed shots on goal*", "*find me all the big tackles*" or "*generate me a 30 second clip of players arguing with the referee*". My mind started firing. I wanted to see how quickly I could build something. I thought sports was a good place to start, to I set out to build a simple MVP where you can:
 
 *   1 - upload a video and search for moments
     
@@ -147,13 +147,13 @@ There are thousands of things to get right when building software. But when buil
 
 I did plan to use [CodeRabbit](https://www.coderabbit.ai/) but honestly just didn’t get around to it.
 
-I’ve read enough horror stories on Twitter where indie-devs (& vibe coders) app’s have been exploited finding hardcoded API keys, APIs without rate-limits, missing RLS policies and generally just a security mess. AI assistant development, unless prompted, will leave all of these security issues wide open for someone to come in and take the absolute monkey out of your app. It could cost you thousands, and leave you with no motivation. There are people out there that see your messy code and take great pleasure in causing as much headache as possible.
+I’ve read enough horror stories on Twitter where indie-devs (& vibe coders) app’s have been exploited finding hardcoded API keys, APIs without rate-limits and missing RLS policies. AI assistant development, unless prompted, will leave all of these security issues wide open for someone to come in and take the absolute monkey out of your app. It could cost you thousands, and leave you with no motivation. There are people out there that see your messy code and take great pleasure in causing as much headache as possible.
 
 Do yourself a favour, spin up two new sessions with Gemini Pro 3 and Claude Opus 4.5 and paste in the following prompt:
 
 ```You are a 10x security engineer and software developer. Conduct a security audit on this codebase and SaaS app to identify critical vulnerabilities and performance bottlenecks.   Your job is to review APIs, database, frontend and backend code and battle-harden the app to protect against bad actors. Give me a comprehensive and thorough overview with clear solutions to each issue, rank your finding in order and suggest if they are of critical/high/low importance.```  
 
-Get both outputs and paste to GPT 5.1 to read and analyse both outputs and create a final security-review document. Re-use the prompt for creating [tasks.md](http://tasks.md) and now you’ll get a granular, step by step task list on how to secure your app. You won’t need to do anything, but I guarantee there will be some big holes.
+Get both outputs and paste to GPT 5.1 to read and analyse both and create a final security-review document. Re-use the prompt for creating [tasks.md](http://tasks.md) and now you’ll get a granular, step by step task list on how to secure your app. I almost guarantee you'll find some holes.
 
 Getting distracted
 ------------------
@@ -162,7 +162,7 @@ There were a bunch of things I did because they were fun, but not because they w
 
 * 1 - webhook from github to telegram to inform me if my deployment was successful or failed and when a new user signed up
     
-* 2 - a UI redesign (playing with v0 proved to be too much fun)
+* 2 - a UI redesign (v0 is just too good)
 
 <div class="flex gap-4 items-center my-8">
   <div class="w-[35%]">
@@ -176,10 +176,10 @@ There were a bunch of things I did because they were fun, but not because they w
 
 * 3 - Some ‘easy’ features in the ‘remember for later’ column that turned out to be hours-long feature improvements because now the codebase was big, I didn’t keep [project-overview.md](http://project-overview.md) updated, errors were more frequent, and it was 3am and I was losing concentration
     
-* 4 - Performance improvements to speed up the DB connection, page loading, optimising images, how the supabase client works, how video embeds play
+* 4 - Performance improvements to speed up the DB connection, page loading, optimising images, how the supabase client works, how video embeds play.
     
 
-Most if not all of this was not required for an MVP.
+None of this was required for an MVP.
 
 Tech Stack
 ----------
@@ -210,3 +210,4 @@ Let’s find out!
 —
 
 If you made it this far, thank you for reading. If you need any help or support while trying any of this yourself, feel free to ping me @JHM\_UK on Twitter, DM me on LinkedIn or fire an email to jamahl at [roomxvi.com](http://roomxvi.com).
+
