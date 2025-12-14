@@ -23,7 +23,7 @@ I’ve been playing around with code for ~10 years but I’m not an engineer. I 
 Starting with an idea
 ---------------------
 
-I came across a company called TwelveLabs, an API-first product that understands video and have a suite of endpoints that can do cool things. I jumped into their open playground and thought it was quite magical. It allows you to search through video using natural language for moments ie if you upload a football match, you can search for moments such as “all headed shots on goal”, “find me all the big tackles” or “generate me a 30 second clip of players arguing with the referee”. My mind started firing. I wanted to see how quickly I could build something. I thought sports was a good place to start, to I set out to build a simple MVP where you can:
+I came across a company called TwelveLabs, an API-first product that understands video and have a suite of endpoints that can do cool things. I jumped into their open playground and thought it was quite magical, allowing you to search through video using natural language for moments ie if you upload a football match, you can search for moments such as “all headed shots on goal”, “find me all the big tackles” or “generate me a 30 second clip of players arguing with the referee”. My mind started firing. I wanted to see how quickly I could build something. I thought sports was a good place to start, to I set out to build a simple MVP where you can:
 
 *   1 - upload a video and search for moments
     
