@@ -13,7 +13,7 @@ const Chip = ({ icon, logo, text, href, tooltip }) => {
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 bg-[#1c1c1c] hover:bg-[#2a2a2a] text-gray-300 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors align-middle mx-1 relative group h-9"
+                className="inline-flex items-center gap-2 bg-[#1c1c1c] hover:bg-[#2a2a2a] text-gray-300 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors align-middle mx-1 my-1 relative group h-9"
                 title={tooltip}
             >
                 {iconElement}
@@ -28,7 +28,7 @@ const Chip = ({ icon, logo, text, href, tooltip }) => {
         );
     }
     return (
-        <span className="inline-flex items-center gap-2 bg-[#1c1c1c] text-gray-300 px-3 py-1.5 rounded-lg text-sm font-medium align-middle mx-1 relative group h-9" title={tooltip}>
+        <span className="inline-flex items-center gap-2 bg-[#1c1c1c] text-gray-300 px-3 py-1.5 rounded-lg text-sm font-medium align-middle mx-1 my-1 relative group h-9" title={tooltip}>
             {iconElement}
             <span>{text}</span>
             {tooltip && (
