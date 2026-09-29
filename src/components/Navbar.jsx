@@ -23,7 +23,7 @@ const Navbar = () => {
                         <div className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#111] border border-[#222] text-sm text-gray-300 w-[110px] h-[34px] hover:border-white/20 transition-colors cursor-default">
                             <div className="absolute inset-0 flex items-center justify-center gap-2 transition-transform duration-300 group-hover:-translate-y-full">
                                 <FiMapPin size={14} />
-                                <span className="font-medium">Melbourne</span>
+                                <span className="font-medium">Perth</span>
                             </div>
                             <div className="absolute inset-0 flex items-center justify-center gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-r from-blue-500/10 to-red-500/10">
                                 <span className="text-base">🇦🇺</span>
