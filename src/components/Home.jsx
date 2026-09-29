@@ -43,7 +43,7 @@ const Home = () => {
                     </p>
 
                     <p className="mb-6">
-                        I've worked at <Chip logo="https://img.logo.dev/weareuncapped.com?token=pk_IVjahwUCRfO8DhFMmwsZRg" text="Uncapped" href="https://weareuncapped.com" tooltip="Series A 125m+ raised B2B lender" />, <Chip logo="https://img.logo.dev/proofs.io?token=pk_IVjahwUCRfO8DhFMmwsZRg" text="Proofs" href="https://proofs.io" tooltip="AI Agent for Software Engineering" />, and <Chip logo="https://img.logo.dev/seedcamp.com?token=pk_IVjahwUCRfO8DhFMmwsZRg" text="Seedcamp" href="https://seedcamp.com" tooltip="Tier 1 EU VC Fund" />.
+                        I currently work at <Chip logo="https://cdn.prod.website-files.com/64ae0bac522e5f8f6c902819/651672be6408d359d528fc6c_better_labs_favicon.png" text="BetterLabs" href="https://betterlabs.com.au" tooltip="Venture studio of RAC WA" />. Before that, I worked at <Chip logo="https://img.logo.dev/weareuncapped.com?token=pk_IVjahwUCRfO8DhFMmwsZRg" text="Uncapped" href="https://weareuncapped.com" tooltip="Series A 125m+ raised B2B lender" />, <Chip logo="https://img.logo.dev/proofs.io?token=pk_IVjahwUCRfO8DhFMmwsZRg" text="Proofs" href="https://proofs.io" tooltip="AI Agent for Software Engineering" />, and <Chip logo="https://img.logo.dev/seedcamp.com?token=pk_IVjahwUCRfO8DhFMmwsZRg" text="Seedcamp" href="https://seedcamp.com" tooltip="Tier 1 EU VC Fund" />.
                     </p>
 
                     <p>
