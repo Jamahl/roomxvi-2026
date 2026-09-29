@@ -34,7 +34,7 @@ const Home = () => {
                 <div className="prose prose-invert prose-lg text-gray-400 leading-relaxed">
                     <p className="mb-6">
                         I've been building & growing startups for the past decade. I'm an AI-native generalist that loves to work with smart people on complex problems.
-                        I like to tinker and play around with things, my github has most projects but some fun ones were <Chip icon="📹" text="vidviso.com" href="https://vidviso.com" />, <Chip icon="🚀" text="oldvids.online" href="https://oldvids.online" /> and <Chip icon="🛠️" text="Fraya - an AI Secretary" href="https://github.com/Jamahl/crewai-zapiermcp-test" />.
+                        I like to tinker and play around with things, my github has most projects but some fun ones were <Chip icon="📹" text="vidviso.com" href="https://vidviso.com" />, <Chip icon="🚀" text="oldvids.online" href="https://oldvids.roomxvi.com/" /> and <Chip icon="🛠️" text="Fraya - an AI Secretary" href="https://github.com/Jamahl/crewai-zapiermcp-test" />.
                     </p>
 
                     <p className="mb-6">
