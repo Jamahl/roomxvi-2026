@@ -39,7 +39,7 @@ const Navbar = () => {
                         >
                             <div className="flex items-center gap-2">
                                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                                <span className="text-sm text-gray-300 font-medium">Open to Work</span>
+                                <span className="text-sm text-gray-300 font-medium">available Feb'27</span>
                             </div>
                         </Button>
                     </div>
