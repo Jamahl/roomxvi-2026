@@ -49,6 +49,10 @@ const Home = () => {
                     <p>
                         I also started a couple of companies <Chip logo="https://img.logo.dev/sociimoney.com?token=pk_IVjahwUCRfO8DhFMmwsZRg" text="Socii Money" href="https://web.archive.org/web/20230314075903/https://www.sociimoney.com/" tooltip="Multiplayer finance app for couples" /> and <Chip logo="https://web.archive.org/web/20201118121949im_/https://uploads-ssl.webflow.com/5e834a2d2fb731430fabeaa6/5e8b5ef6b52eaa70ec8e345a_favicon2%402x.png" text="The Network" href="https://web.archive.org/web/20201118121949/https://hq.the-network.io/" tooltip="SaaS Operating System for VC/PE industry to manage post-investment support" />.
                     </p>
+
+                    <p className="mt-6">
+                        If you're interesting in learning how I use agents for building, check out my setup <a href="https://github.com/Jamahl/AI-OPS" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4 hover:text-gray-300">here &gt;</a>
+                    </p>
                 </div>
             </header>
 
