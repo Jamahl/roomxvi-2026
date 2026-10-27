@@ -51,7 +51,7 @@ const Home = () => {
                     </p>
 
                     <p className="mt-6">
-                        If you're interesting in learning how I use agents for building, check out my setup <a href="https://github.com/Jamahl/AI-OPS" target="_blank" rel="noopener noreferrer" className="text-white font-bold underline decoration-blue-400/60 underline-offset-4 hover:decoration-blue-400">here</a>
+                        If you're interesting in learning how I use agents for building, check out my setup <a href="https://github.com/Jamahl/AI-OPS" target="_blank" rel="noopener noreferrer" className="text-white font-bold underline decoration-blue-400/60 underline-offset-4 hover:decoration-blue-400">here</a>.
                     </p>
                 </div>
             </header>
